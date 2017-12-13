@@ -1,3 +1,8 @@
+NEW IN THIS VERSION
+===================
+
+This update adds a new "Shuffle PIN" option as well as plausible deniability features.
+
 Warning
 =======
 

@@ -7,16 +7,16 @@ firmwares:
    bolos_version:
     min: '1.2'
    osu:
-    hash: "7f39a849d2a7a3886e30ca4badaa470bc9efc04a0e697769e405e1245dd0d0cd"
+    hash: "EE7BAC180DC466E29EBFD98E6AA59E4E62E43046834559762CAC6BACCC41F4F6"
     perso: perso_11
     targetId: 0x31100002
-    firmware: nanos_12_pre2/upgrade_nanos_osu_1.2
-    firmwareKey: nanos_12_pre2/upgrade_nanos_osu_1.2_key
+    firmware: nanos_12/upgrade_nanos_osu_1.2
+    firmwareKey: nanos_12/upgrade_nanos_osu_1.2_key
    final:
     perso: perso_11
     targetId: 0x31100002
-    firmware: nanos_12_pre2/upgrade_nanos_1.2
-    firmwareKey: nanos_12_pre2/upgrade_nanos_1.2_key
+    firmware: nanos_12/upgrade_nanos_1.2
+    firmwareKey: nanos_12/upgrade_nanos_1.2_key
 # Firmwares for BOLOS < 1.2
   -
    name: '1.2'
@@ -24,16 +24,16 @@ firmwares:
    bolos_version:
     max: '1.1'
    osu:
-    hash: "7f39a849d2a7a3886e30ca4badaa470bc9efc04a0e697769e405e1245dd0d0cd"
+    hash: "EE7BAC180DC466E29EBFD98E6AA59E4E62E43046834559762CAC6BACCC41F4F6"
     perso: perso_11
     targetId: 0x31100002
-    firmware: nanos_12_pre2/upgrade_nanos_osu_1.2
-    firmwareKey: nanos_12_pre2/upgrade_nanos_osu_1.2_key
+    firmware: nanos_12/upgrade_nanos_osu_1.2
+    firmwareKey: nanos_12/upgrade_nanos_osu_1.2_key
    final:
     perso: perso_11
     targetId: 0x31100002
-    firmware: nanos_12_pre2/upgrade_nanos_1.2
-    firmwareKey: nanos_12_pre2/upgrade_nanos_1.2_key
+    firmware: nanos_12/upgrade_nanos_1.2
+    firmwareKey: nanos_12/upgrade_nanos_1.2_key
 
 applications:
  nanos:
@@ -42,29 +42,32 @@ applications:
    name: Bitcoin
    identifier: Bitcoin
    icon: bitcoin
-   version: "1.1.0"
+   version: "1.1.1"
    bolos_version:
     min: '1.2'
    app:
     perso: perso_11
     targetId: 0x31100002
-    firmware: nanos_12_pre2/st31_btc
-    firmwareKey: nanos_12_pre2/st31_btc_key
+    firmware: nanos_12/st31_btc
+    firmwareKey: nanos_12/st31_btc_key
   -
-   name: Litecoin
-   identifier: Litecoin
-   icon: litecoin
-   version: "1.1.0"
+   name: Bitcoin Beta
+   identifier: Bitcoin
+   notes: 'bitcoin_1_1_2.md'
+   icon: bitcoin
+   developer: true
+   version: "1.1.2"
    bolos_version:
     min: '1.2'
    app:
     perso: perso_11
     targetId: 0x31100002
-    firmware: nanos_12_pre2/st31_ltc
-    firmwareKey: nanos_12_pre2/st31_ltc_key
+    firmware: nanos_12/st31_btc_112
+    firmwareKey: nanos_12/st31_btc_112_key
   -
    name: Ethereum
    identifier: Ethereum
+   notes: 'ethereum_1_1.md'
    icon: ethereum
    version: "1.1.0"
    bolos_version:
@@ -72,8 +75,22 @@ applications:
    app:
     perso: perso_11
     targetId: 0x31100002
-    firmware: nanos_12_pre2/st31_etc
-    firmwareKey: nanos_12_pre2/st31_etc_key
+    firmware: nanos_12/st31_etc
+    firmwareKey: nanos_12/st31_etc_key
+  -
+   name: Ethereum Beta
+   identifier: Ethereum
+   notes: 'ethereum_1_0_3.md'
+   icon: ethereum
+   developer: true
+   version: "1.0.3"
+   bolos_version:
+    min: '1.2'
+   app:
+    perso: perso_11
+    targetId: 0x31100002
+    firmware: nanos_12/st31_etc_103
+    firmwareKey: nanos_12/st31_etc_103_key
   -
    name: Fido U2F
    identifier: Fido U2F
@@ -84,8 +101,56 @@ applications:
    app:
     perso: perso_11
     targetId: 0x31100002
-    firmware: nanos_12_pre2/st31_fido_u2f
-    firmwareKey: nanos_12_pre2/st31_fido_u2f_key
+    firmware: nanos_12/st31_fido_u2f
+    firmwareKey: nanos_12/st31_fido_u2f_key
+  -
+   name: Litecoin
+   identifier: Litecoin
+   icon: litecoin
+   version: "1.1.1"
+   bolos_version:
+    min: '1.2'
+   app:
+    perso: perso_11
+    targetId: 0x31100002
+    firmware: nanos_12/st31_ltc
+    firmwareKey: nanos_12/st31_ltc_key
+  -
+   name: Dogecoin
+   identifier: Dogecoin
+   icon: dogecoin
+   version: "1.1.1"
+   bolos_version:
+    min: '1.2'
+   app:
+    perso: perso_11
+    targetId: 0x31100002
+    firmware: nanos_12/st31_doge
+    firmwareKey: nanos_12/st31_doge_key
+  -
+   name: Dash
+   identifier: Dash
+   icon: dash
+   version: "1.1.1"
+   bolos_version:
+    min: '1.2'
+   app:
+    perso: perso_11
+    targetId: 0x31100002
+    firmware: nanos_12/st31_dash
+    firmwareKey: nanos_12/st31_dash_key
+  -
+   name: Zcash
+   identifier: Zcash
+   icon: zcash
+   version: "1.1.1"
+   bolos_version:
+    min: '1.2'
+   app:
+    perso: perso_11
+    targetId: 0x31100002
+    firmware: nanos_12/st31_zcash
+    firmwareKey: nanos_12/st31_zcash_key
   -
    name: "SSH/PGP Agent"
    identifier: "SSH/PGP Agent"
@@ -97,8 +162,8 @@ applications:
    app:
     perso: perso_11
     targetId: 0x31100002
-    firmware: nanos_12_pre2/st31_gpg
-    firmwareKey: nanos_12_pre2/st31_gpg_key
+    firmware: nanos_12/st31_gpg
+    firmwareKey: nanos_12/st31_gpg_key
 
 # Applications for BOLOS < 1.2
   -
@@ -113,18 +178,6 @@ applications:
     targetId: 0x31100002
     firmware: st31_btc
     firmwareKey: st31_btc_key
-  -
-   name: Litecoin
-   identifier: Litecoin
-   icon: litecoin
-   version: "1.0.0"
-   bolos_version:
-    max: '1.1'
-   app:
-    perso: perso_11
-    targetId: 0x31100002
-    firmware: st31_ltc
-    firmwareKey: st31_ltc_key
   -
    name: Ethereum
    identifier: Ethereum
@@ -149,6 +202,19 @@ applications:
     targetId: 0x31100002
     firmware: st31_fido_u2f
     firmwareKey: st31_fido_u2f_key
+  -
+   name: Litecoin
+   identifier: Litecoin
+   icon: litecoin
+   version: "1.0.0"
+   bolos_version:
+    min: '1.1'
+    max: '1.1'
+   app:
+    perso: perso_11
+    targetId: 0x31100002
+    firmware: st31_ltc
+    firmwareKey: st31_ltc_key
   -
    name: "SSH/PGP Agent"
    identifier: "SSH/PGP Agent"
